@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Since it happens in the first run, /foo ends up being saved in the base image,
+# Since it happens in the first run, /foo-d ends up being saved in the base image,
 # but nothing else after ever ends up being committed to an image.
 if [ ! -d /foo-d ]; then
 	mkdir /foo-d
