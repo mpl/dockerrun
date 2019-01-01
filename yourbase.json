@@ -1,0 +1,12 @@
+{
+    "build": {
+        "image": "golang:1.11",
+        "environment": {
+            "GIT_TERMINAL_PROMPT": "0",
+            "GO111MODULE": "on"
+        },
+        "run": [
+            "echo NOOP"
+        ]
+    }
+}
