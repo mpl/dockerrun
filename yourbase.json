@@ -1,19 +1,20 @@
 {
-    "build": {
-        "image": "golang:1.11",
-        "checkout_directory": "${GOPATH}/src/github.com/mpl/dockerrun",
-        "environment": {
-            "GIT_TERMINAL_PROMPT": "0",
-            "GO111MODULE": "on"
-        },
-        "run": [
-			"echo FORHEROKU",
-            "echo NOOP"
-        ]
-    },
+	"build": {
+		"image": "golang:1.11",
+		"checkout_directory": "${GOPATH}/src/github.com/mpl/dockerrun",
+		"environment": {
+			"GIT_TERMINAL_PROMPT": "0",
+			"GO111MODULE": "on"
+		},
+		"run": [
+			"echo HELLO",
+			"./sleep.sh",
+			"echo WORLD"
+		]
+	},
 	"deploy": {
 		"run": [
-			"echo ALSONOOP"
+			"echo NOOP"
 		]
 	}
 }
