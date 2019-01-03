@@ -9,7 +9,8 @@
 		"run": [
 			"echo HELLO",
 			"./sleep.sh",
-			"echo WORLD"
+			"echo WORLD",
+			"echo UNIVERSE"
 		]
 	},
 	"deploy": {
