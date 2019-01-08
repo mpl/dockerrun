@@ -4,9 +4,12 @@
 		"checkout_directory": "${GOPATH}/src/github.com/mpl/dockerrun",
 		"environment": {
 			"GIT_TERMINAL_PROMPT": "0",
-			"GO111MODULE": "on"
+			"GO111MODULE": "on",
+			"VAULT_GITHUB_TOKEN": "valid_github_token_here"
 		},
 		"run": [
+			"cat /root/.vault-token",
+			"vault kv get secret/mpl/hello",
 			"echo HELLO",
 			"./sleep.sh",
 			"echo WORLD",
